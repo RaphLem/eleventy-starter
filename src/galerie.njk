@@ -9,7 +9,7 @@ title: Galerie
     <div class="container lg:text-color4 text-4xl" >
         {{ component("headings/title", { content: "Galerie" }) }}
     </div>
-    <button @click="open = !open" class='modal-open bg-color3 border border-gray-500 text-color4 font-bold py-2 px-4 rounded-full'>
+    <button @click="open = !open" class='modal-open bg-color3 text-color4 lg:bg-color4 lg:text-color3 font-bold py-2 px-4 rounded-full'>
         Affiche/Cache dialogue
     </button>
     <dialog :open="open">
@@ -17,26 +17,26 @@ title: Galerie
     </dialog>
     <div>
         <ul>
-            <li><img src='/dist/static/images/thumbnails/animals-1.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-1.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-2.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-2.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-3.jpeg' alt=''
+            <li><img src='/static/images/thumbnails/animals-1.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-1.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-2.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-2.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-3.jpeg' alt=''
                      @click='imageUrl = "/dist/static/images/animals-3.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-4.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-4.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-5.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-5.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-6.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-6.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-7.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-7.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-8.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-8.jpeg"'></li>
-            <li><img src='/dist/static/images/thumbnails/animals-9.jpeg' alt=''
-                     @click='imageUrl = "/dist/static/images/animals-9.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-4.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-4.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-5.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-5.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-6.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-6.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-7.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-7.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-8.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-8.jpeg"'></li>
+            <li><img src='/static/images/thumbnails/animals-9.jpeg' alt=''
+                     @click='imageUrl = "/static/images/animals-9.jpeg"'></li>
         </ul>
-        <div x-show='!!imageUrl' @click.away='imageUrl=null'>
+        <div x-show='imageUrl' @click.away='imageUrl=null'>
             <img :src='imageUrl' alt=''>
         </div>
     </div>
