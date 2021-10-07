@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         'regal-blue': '#243c5a',
       },
+      fontFamily: {
+        text: ['Calibri'],
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
