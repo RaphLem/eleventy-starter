@@ -7,7 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'regal-blue': '#243c5a',
+        color2: '#0B4776',
+        color1: '#186843',
+        color3: '#0B1338',
+        color4: '#F8EFD9',
+        color5: '#EB9A2F',
+        color6: '#67868B',
       },
       fontFamily: {
         text: ['Calibri'],
