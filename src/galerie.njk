@@ -15,4 +15,29 @@ title: Galerie
     <dialog :open="open">
         Bien joué à toi !
     </dialog>
+    <div>
+        <ul>
+            <li><img src='/dist/static/images/thumbnails/animals-1.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-1.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-2.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-2.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-3.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-3.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-4.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-4.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-5.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-5.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-6.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-6.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-7.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-7.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-8.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-8.jpeg"'></li>
+            <li><img src='/dist/static/images/thumbnails/animals-9.jpeg' alt=''
+                     @click='imageUrl = "/dist/static/images/animals-9.jpeg"'></li>
+        </ul>
+        <div x-show='!!imageUrl' @click.away='imageUrl=null'>
+            <img :src='imageUrl' alt=''>
+        </div>
+    </div>
 </div>
