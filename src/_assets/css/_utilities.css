@@ -4,3 +4,29 @@
     touch-action: none;
   }
 }
+
+.container{
+  text-align: center;
+  font-size: 3em;
+}
+
+button{
+  display: block;
+  margin: 20px auto;
+
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1{
+  display: block;
+  margin: 20px auto;
+}
+
+li>a {
+  font-size: 1.5em;
+}
+
